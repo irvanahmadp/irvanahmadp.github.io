@@ -1,0 +1,34 @@
+import ProjectLayout from "src/layouts/ProjectLayout";
+
+## Preview
+
+![Azaleabook Light](https://raw.githubusercontent.com/IrvanAhmadP/azaleabook-theme/main/preview/AzaleaBook-Theme-1.webp)
+![Azaleabook Dark](https://raw.githubusercontent.com/IrvanAhmadP/azaleabook-theme/main/preview/AzaleaBook-Theme-2.webp)
+
+## Usage
+
+- Create a book with the command `mdbook init`.
+
+  ```vim
+  mdbook init <directory>
+  ```
+
+- Add azaleabook theme
+
+  ```vim
+  cd <directory>
+  git submodule add https://github.com/IrvanAhmadP/azaleabook-theme.git azaleabook-theme
+  ```
+
+- Config `book.toml`.
+
+  ```toml
+  [output.html]
+  theme = "azaleabook-theme"
+  default-theme = "azaleabook-light"
+  preferred-dark-theme = "azaleabook-dark"
+  ```
+
+export default ({ children }) => <ProjectLayout>{children}</ProjectLayout
+
+>

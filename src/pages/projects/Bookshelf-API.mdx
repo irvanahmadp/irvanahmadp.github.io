@@ -1,0 +1,107 @@
+import ProjectLayout from "src/layouts/ProjectLayout";
+
+## Getting Started
+
+Cloning this repo use SSH
+
+```
+git clone git@github.com:IrvanAhmadP/Bookshelf-API.git
+```
+
+Cloning this repo use HTTPS:
+
+```
+git clone https://github.com/IrvanAhmadP/Bookshelf-API.git
+```
+
+Open the directory:
+
+```
+cd Bookshelf-API
+```
+
+## Installing
+
+First time you need to install all of package json.
+
+```
+npm i
+# or
+yarn
+# or
+pnpm i
+```
+
+## Running Project
+
+To run the project, you can use the command below:
+
+```
+npm run start
+# or
+yarn start
+# or
+pnpm start
+```
+
+## API Specification
+
+### Add Book
+
+    `POST /books`
+
+    Body request:
+
+    ```json
+    {
+        "name": string,
+        "year": number,
+        "author": string,
+        "summary": string,
+        "publisher": string,
+        "pageCount": number,
+        "readPage": number,
+        "reading": boolean
+    }
+    ```
+
+### Displaying Book List
+
+    `GET /books`
+
+    Query parameters:
+
+    - `?name`: string (optional)
+    - `?reading`: boolean (optional)
+    - `?finished`: boolean (optional)
+
+### Showing Book Details
+
+    `GET /books/{bookId}`
+
+### Updating Book Data
+
+    `PUT /books/{bookId}`
+
+    Body request:
+
+    ```json
+    {
+        "name": string,
+        "year": number,
+        "author": string,
+        "summary": string,
+        "publisher": string,
+        "pageCount": number,
+        "readPage": number,
+        "reading": boolean
+    }
+    ```
+
+### Deleting Book
+
+    `DELETE /books/{bookId}`
+
+export default ({ children }) => <ProjectLayout>{children}</ProjectLayout
+
+>

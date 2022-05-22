@@ -1,0 +1,32 @@
+{
+  "theme": {
+    "dark": "Dark",
+    "light": "Light",
+    "system": "System"
+  },
+  "nav": {
+    "home": "Home",
+    "articles": "Articles",
+    "projects": "Projects",
+    "about": "About"
+  },
+  "home": {
+    "greeting": "👋 Hi there",
+    "message": "Welcome to my personal website."
+  },
+  "article": {
+    "title": "Articles",
+    "read_article": "Read this article"
+  },
+  "project": {
+    "title": "Projects",
+    "view_project": "View Project"
+  },
+  "about": {
+    "title": "About Me",
+    "greeting": "Hello I'm Irvan",
+    "i_am": "I'm",
+    "job_title": "Web Developer",
+    "description": "I am a tech enthusiast and programming language agnostic."
+  }
+}

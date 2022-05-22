@@ -1,0 +1,65 @@
+[
+  {
+    "title": "RBuilder",
+    "description": "Templates for contracting companies.",
+    "bg-color": "bg-orange-400",
+    "repository_url": "https://github.com/irvanahmadp/RBuilder",
+    "thumbnail": "https://raw.githubusercontent.com/IrvanAhmadPrasetya/RBuilder/master/images/Screenshot%20-%20RBuilder.webp",
+    "slug": "/projects/RBuilder",
+    "tags": ["React", "Bulma"]
+  },
+  {
+    "title": "AzaleaBook - Theme for mdbook",
+    "bg-color": "bg-slate-900",
+    "repository_url": "https://github.com/IrvanAhmadP/azaleabook-theme",
+    "thumbnail": "https://raw.githubusercontent.com/IrvanAhmadP/azaleabook-theme/main/preview/AzaleaBook-Theme-2.webp",
+    "slug": "/projects/AzaleaBook-Theme",
+    "tags": ["Theme", "MDBook"]
+  },
+  {
+    "title": "RN Sign Up Template",
+    "bg-color": "bg-blue-400",
+    "repository_url": "https://github.com/irvanahmadp/RNSignUpTemplate",
+    "thumbnail": "https://irvanahmadp.github.io/img/screenshot3-RNSignUpTemplate.webp",
+    "slug": "/projects/RNSignUpTemplate",
+    "tags": ["React Native", "Template"]
+  },
+  {
+    "title": "Bookshelf API",
+    "bg-color": "bg-green-500",
+    "repository_url": "https://github.com/IrvanAhmadP/Bookshelf-API",
+    "slug": "/projects/Bookshelf-API",
+    "tags": ["JavaScript", "NodeJS", "API"]
+  },
+  {
+    "title": "Go Libraries and Frameworks",
+    "description": "List of Go frameworks and libraries with github starts, forks, last update, etc.",
+    "bg-color": "bg-blue-500",
+    "repository_url": "https://github.com/IrvanAhmadP/Go-Libraries-and-Frameworks",
+    "slug": "/projects/Go-Libraries-and-Frameworks",
+    "tags": ["Golang", "Go Library", "Go Framework"]
+  },
+  {
+    "title": "Indonesian Region API",
+    "bg-color": "bg-green-500",
+    "repository_url": "https://github.com/IrvanAhmadP/GoApiWilayahIndonesia",
+    "slug": "/projects/Indonesian-Region-API",
+    "tags": ["Golang", "API"]
+  },
+  {
+    "title": "Drink Shop",
+    "bg-color": "bg-slate-900",
+    "repository_url": "https://github.com/irvanahmadp/Toko-Minuman",
+    "thumbnail": "https://irvanahmadp.github.io/img/screenshot2-Toko%20Minuman.webp",
+    "slug": "/projects/Drink-Shop",
+    "tags": ["PHP", "Bootstrap"]
+  },
+  {
+    "title": "BW Admin",
+    "bg-color": "bg-slate-900",
+    "repository_url": "https://github.com/IrvanAhmadP/BW-Admin",
+    "thumbnail": "https://raw.githubusercontent.com/IrvanAhmadP/BW-Admin/master/BW%20Admin.png",
+    "slug": "/projects/BW-Admin",
+    "tags": ["HTML", "Bootstrap"]
+  }
+]

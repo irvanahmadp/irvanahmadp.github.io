@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Membuat pnpm workspace",
+    "thumbnail": "https://miro.medium.com/fit/c/224/224/1*Llzyz7QvwoWasbQ6AbFbSg.png",
+    "desc": "Install pnpm Sebelum membuat workspace dengan pnpm, mari kita install pnpm terlebih dahulu. Untuk menginstall pnpm, kita dapat menggunakan npm atau npx. Berikut ini cara install pnpm dengan npm.",
+    "repository_url": "https://irvanahmadp.medium.com/membuat-pnpm-workspace-2c24c581edc0",
+    "tags": ["NodeJS", "Package Manager"]
+  },
+  {
+    "title": "Belajar Sass",
+    "thumbnail": "https://miro.medium.com/fit/c/224/224/1*ZPaLIi9dj0Db9dzwRB4FnA.png",
+    "desc": "Pada artikel ini, kita akan mempelajari dasar-dasar Sass yang akan memudahkan kita dalam menulis CSS. Artikel ini dibuat berdasarkan tutorial dari Progate. Untuk teman-teman yang ingin mempelajari Sass.",
+    "repository_url": "https://irvanahmadp.medium.com/belajar-sass-a9044bea9bc4",
+    "tags": ["Sass", "CSS", "Style"]
+  },
+  {
+    "title": "Belajar Golang",
+    "thumbnail": "https://miro.medium.com/fit/c/224/224/1*Z3W3s5QYNg9fRwL5TjgRPA.png",
+    "desc": "Pengenalan Golang atau biasa disebut Go adalah bahasa pemrograman yang dikembangkan di Google oleh Robert Griesemer, Rob Pike, dan Ken Thompson pada tahun 2007 dan mulai diperkenalkan ke publik tahun.",
+    "repository_url": "https://irvanahmadp.medium.com/belajar-golang-85c6aca406e",
+    "tags": ["Golang", "Programming Language"]
+  }
+]
