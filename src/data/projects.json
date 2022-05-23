@@ -50,7 +50,7 @@
     "title": "Drink Shop",
     "bg-color": "bg-slate-900",
     "repository_url": "https://github.com/irvanahmadp/Toko-Minuman",
-    "thumbnail": "https://irvanahmadp.github.io/img/screenshot2-Toko%20Minuman.webp",
+    "thumbnail": "https://raw.githubusercontent.com/IrvanAhmadP/Toko-Minuman/master/screenshot/Screenshot%201.webp",
     "slug": "/projects/Drink-Shop",
     "tags": ["PHP", "Bootstrap"]
   },
