@@ -1,0 +1,27 @@
+[
+  {
+    "alt": "Linkedin",
+    "img-url": "/icons/linkedin.svg",
+    "url": "https://www.linkedin.com/in/irvan-ahmad-prasetya-6306a8115/"
+  },
+  {
+    "alt": "Medium",
+    "img-url": "/icons/medium.svg",
+    "url": "https://irvanahmadp.medium.com/"
+  },
+  {
+    "alt": "Dribbble",
+    "img-url": "/icons/dribbble.svg",
+    "url": "https://dribbble.com/irvan_ahmad_p"
+  },
+  {
+    "alt": "Github",
+    "img-url": "/icons/github.svg",
+    "url": "https://github.com/IrvanAhmadP/"
+  },
+  {
+    "alt": "Telegram",
+    "img-url": "/icons/telegram.svg",
+    "url": "https://t.me/IrvanAhmadP"
+  }
+]

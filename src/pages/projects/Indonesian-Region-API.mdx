@@ -1,0 +1,155 @@
+import ProjectLayout from "src/layouts/ProjectLayout";
+
+## Getting Started
+
+1. Cloning this project.
+   - Use HTTP:
+     ```
+     git clone https://github.com/IrvanAhmadP/GoApiWilayahIndonesia.git
+     ```
+   - Use SSH:
+     ```
+     git clone git@github.com:IrvanAhmadP/GoApiWilayahIndonesia.git
+     ```
+2. Import the database from `db_example` folder.
+3. Setting username, password, database server in `helper/database.go`.
+
+## Running REST API
+
+```go
+go run main.go
+```
+
+## Build REST API
+
+```go
+go build main.go
+```
+
+## API Specification
+
+Sample request and response.
+
+### Province List
+
+- Request
+
+  `GET /provinsi/`
+
+- Response
+
+  ```json
+  {
+    "result": 200,
+    "status": "success",
+    "pesan": "",
+    "data": [
+      {
+        "id": 11,
+        "nama": "ACEH"
+      }
+    ]
+  }
+  ```
+
+### County List
+
+- Request
+
+  `GET /kabupaten/?provinsi_id=<provinsi_id>`
+
+- Response
+
+  ```json
+  {
+    "result": 200,
+    "status": "success",
+    "pesan": "",
+    "data": [
+      {
+        "id": 1101,
+        "provinsi_id": 11,
+        "nama": "KABUPATEN SIMEULUE"
+      }
+    ]
+  }
+  ```
+
+### District List
+
+- Request
+
+  `GET /kecamatan/?kabupaten_id=<kabupaten_id>`
+
+- Response
+
+  ```json
+  {
+    "result": 200,
+    "status": "success",
+    "pesan": "",
+    "data": [
+      {
+        "id": 1101010,
+        "kabupaten_id": 1101,
+        "nama": "TEUPAH SELATAN"
+      }
+    ]
+  }
+  ```
+
+### Village List
+
+- Request
+
+  `GET /kelurahan/?kecamatan_id=<kecamatan_id>`
+
+- Response
+
+  ```json
+  {
+    "result": 200,
+    "status": "success",
+    "pesan": "",
+    "data": [
+      {
+        "id": 1101010001,
+        "kecamatan_id": 1101010,
+        "nama": "LATIUNG"
+      }
+    ]
+  }
+  ```
+
+### Region Data By ID and Category
+
+- Request
+
+  `GET /data-wilayah/?kategori=<kategori_wilayah>&id=<wilayah_id>`
+
+- Response
+
+  ```json
+  {
+    "result": 200,
+    "status": "success",
+    "pesan": "",
+    "data": {
+      "id": 1101010001,
+      "kategori": "kelurahan",
+      "nama": "LATIUNG",
+      "rincian": {
+        "provinsi_id": 11,
+        "provinsi_nama": "ACEH",
+        "kabupaten_id": 1101,
+        "kabupaten_nama": "KABUPATEN SIMEULUE",
+        "kecamatan_id": 1101010,
+        "kecamatan_nama": "TEUPAH SELATAN",
+        "kelurahan_id": 1101010001,
+        "kelurahan_nama": "LATIUNG"
+      }
+    }
+  }
+  ```
+
+export default ({ children }) => <ProjectLayout>{children}</ProjectLayout>;

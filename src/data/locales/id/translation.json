@@ -1,0 +1,32 @@
+{
+  "theme": {
+    "dark": "Gelap",
+    "light": "Terang",
+    "system": "Sistem"
+  },
+  "nav": {
+    "home": "Beranda",
+    "articles": "Artikel",
+    "projects": "Proyek",
+    "about": "Tentang"
+  },
+  "home": {
+    "greeting": "👋 Halo",
+    "message": "Selamat datang di website pribadiku."
+  },
+  "article": {
+    "title": "Artikel",
+    "read_article": "Baca artikel ini"
+  },
+  "project": {
+    "title": "Proyek",
+    "view_project": "Lihat Proyek"
+  },
+  "about": {
+    "title": "Tentang saya",
+    "greeting": "Halo saya Irvan",
+    "i_am": "Saya seorang",
+    "job_title": "Web Developer",
+    "description": "Saya seorang penggemar teknologi, agnostik bahasa pemrograman."
+  }
+}
