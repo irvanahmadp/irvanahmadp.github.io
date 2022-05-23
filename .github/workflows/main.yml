@@ -37,7 +37,7 @@ jobs:
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
       - name: Deploy
-        uses: IrvanAhmadP/irvanahmadp.github.io@2.0.0
+        uses: IrvanAhmadP/irvanahmadp.github.io@v2.0.0
         with:
           branch: main
           folder: out
