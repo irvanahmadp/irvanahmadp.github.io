@@ -21,7 +21,7 @@ const BoxTag: FC<TagsProps> = ({ data, className }) => {
       key={i}
       className={classnames(
         className,
-        "rounded border border-slate-100 bg-slate-200 py-1 px-2 dark:border-slate-600 dark:bg-slate-500 md:py-1.5 md:px-3"
+        "mr-2 rounded border border-slate-100 bg-slate-200 py-1 px-2 dark:border-slate-600 dark:bg-slate-500 md:py-1.5 md:px-3"
       )}
     >
       {tag}
@@ -29,7 +29,7 @@ const BoxTag: FC<TagsProps> = ({ data, className }) => {
   ));
 
   return (
-    <div className="my-0.5 flex flex-wrap gap-2 text-sm font-medium leading-3">
+    <div className="my-0.5 flex flex-wrap text-sm font-medium leading-3">
       {listItems}
     </div>
   );
@@ -40,20 +40,20 @@ const TextTag: FC<TagsProps> = ({ data }) => {
   const listItems = data?.map((tag, i) => {
     if (i !== length) {
       return (
-        <li key={i} style={{ direction: "rtl" }}>
+        <li key={i} style={{ direction: "rtl" }} className="mr-1.5">
           {tag}{" "}
         </li>
       );
     }
     return (
-      <li key={i} className="list-none">
+      <li key={i} className="mr-1.5 list-none">
         {tag}
       </li>
     );
   });
 
   return (
-    <ul className="flex list-inside list-disc flex-wrap gap-1.5 font-medium">
+    <ul className="flex list-inside list-disc flex-wrap font-medium">
       {listItems}
     </ul>
   );

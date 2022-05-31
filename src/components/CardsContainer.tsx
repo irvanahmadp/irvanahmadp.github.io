@@ -6,7 +6,7 @@ type CardsContainer = {
 
 const CardsContainer: FC<CardsContainer> = ({ children }) => {
   return (
-    <div className="m-auto grid grid-cols-1 gap-8 overflow-x-auto md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-8">
+    <div className="m-auto grid grid-cols-1 overflow-x-auto md:grid-cols-2 lg:grid-cols-3">
       {children}
     </div>
   );

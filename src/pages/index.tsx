@@ -59,14 +59,14 @@ const ArticleContainer = () => {
 
       {articles.map((article, i) => {
         return (
-          <div key={i} className="my-8 flex gap-4">
+          <div key={i} className="my-8 flex">
             <img
               alt={article.title}
               src={article.thumbnail}
               className="h-20 w-20 rounded border border-slate-200 object-cover md:h-28 md:w-28"
               placeholder="blur"
             />
-            <div className="flex flex-col justify-between">
+            <div className="ml-4 flex flex-col justify-between">
               <div className="title">
                 <Link href={article.repository_url}>
                   <a className="text-xl hover:text-purple-500 dark:hover:text-purple-300 md:text-2xl">
@@ -173,12 +173,12 @@ const AboutContainer = () => {
         <p className="mt-0.5 text-lg md:text-justify md:text-xl">
           {t.about.description}
         </p>
-        <div className="my-3 flex justify-center gap-3 md:gap-6">
+        <div className="my-3 flex justify-center">
           {contacts.map((contact, i) => {
             return (
               <a key={i} href={contact.url}>
                 <img
-                  className="h-10 w-10 duration-300 hover:scale-125"
+                  className="mx-1.5 h-10 w-10 duration-300 hover:scale-125 md:mx-3"
                   alt={contact.alt}
                   src={contact["img-url"]}
                 />
