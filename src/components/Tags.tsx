@@ -40,20 +40,22 @@ const TextTag: FC<TagsProps> = ({ data }) => {
   const listItems = data?.map((tag, i) => {
     if (i !== length) {
       return (
-        <li key={i} style={{ direction: "rtl" }} className="mr-1.5">
+        <li key={i} style={{ direction: "rtl" }} className="mr-3 md:mr-1.5">
           {tag}{" "}
         </li>
       );
     }
+
     return (
-      <li key={i} className="mr-1.5 list-none">
+      // last component
+      <li key={i} className="list-none">
         {tag}
       </li>
     );
   });
 
   return (
-    <ul className="flex list-inside list-disc flex-wrap font-medium">
+    <ul className="flex list-inside list-disc flex-wrap text-sm font-medium md:text-base">
       {listItems}
     </ul>
   );
