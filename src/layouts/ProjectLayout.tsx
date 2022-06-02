@@ -28,7 +28,7 @@ const ProjectLayout: FC<ProjectLayoutProps> = ({ children }) => {
       </Head>
       <Nav />
       <Setting />
-      <div className="flex min-h-last-content flex-col justify-between bg-slate-100 pb-8 dark:bg-slate-700 md:min-h-last-content-md md:py-8 md:px-16 lg:flex-row xl:px-32">
+      <div className="flex min-h-last-content flex-col justify-between bg-slate-100 dark:bg-slate-700 md:min-h-last-content-md md:py-8 md:px-16 lg:flex-row xl:px-32">
         <article className="prose w-full max-w-none overflow-x-auto border-b border-slate-300 bg-white p-4 prose-headings:my-2 prose-h1:text-3xl prose-p:my-0 prose-code:rounded prose-code:bg-slate-200 prose-code:p-1 prose-code:font-normal prose-pre:my-4 prose-img:rounded-lg dark:prose-invert dark:border-slate-600 dark:bg-slate-800 dark:text-inherit dark:prose-code:bg-slate-700 dark:prose-pre:bg-slate-700 md:rounded-lg md:border md:p-8">
           <div className="flex items-center">
             <h1 className="flex-grow">
