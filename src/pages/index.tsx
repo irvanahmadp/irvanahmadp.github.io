@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useState, ReactElement } from "react";
+import { useState, ReactElement, FC } from "react";
 import {
   Button,
   Tags,
@@ -17,12 +17,27 @@ import BasicLayout from "src/layouts/BasicLayout";
 const porjectsShow = projects.slice(0, 6);
 
 const Page = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [projectModalData, setProjectModalData] =
+    useState<ProjectModalDataProps>({ title: "", slug: "/", tags: [] });
+
+  function openProjectModal(project: ProjectModalDataProps) {
+    setIsOpen(true);
+    setProjectModalData(project);
+  }
+
   return (
     <>
       <HomeContainer />
       <ArticleContainer />
-      <ProjectContainer />
+      <ProjectContainer handleClick={openProjectModal}/>
       <AboutContainer />
+      
+      <ProjectModal
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        data={projectModalData}
+      />
     </>
   );
 };
@@ -31,7 +46,7 @@ const HomeContainer = () => {
   const t = translation();
 
   return (
-    <div
+    <section
       id="home"
       className="flex h-full-content min-h-full-content scroll-m-14 items-center justify-center overflow-hidden bg-gradient-to-b from-violet-400 via-fuchsia-400 to-purple-400 px-4 py-20 dark:from-violet-500 dark:via-fuchsia-400 dark:to-purple-500 md:h-full-content-md md:min-h-full-content-md md:scroll-mt-20 md:bg-gradient-to-r md:px-16 xl:px-32"
     >
@@ -41,7 +56,7 @@ const HomeContainer = () => {
           <p className="font-light md:font-extralight">{t.home.message}</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
@@ -49,7 +64,7 @@ const ArticleContainer = () => {
   const t = translation();
 
   return (
-    <div
+    <section
       id="articles"
       className="min-h-full-content scroll-mt-14 px-4 py-8 dark:bg-slate-900 md:min-h-full-content-md md:scroll-mt-20 md:px-16 xl:px-32"
     >
@@ -93,29 +108,19 @@ const ArticleContainer = () => {
           </div>
         );
       })}
-    </div>
+    </section>
   );
 };
 
-const ProjectContainer = () => {
-  const t = translation();
-  const [isOpen, setIsOpen] = useState(false);
-  const [projectModalData, setProjectModalData] =
-    useState<ProjectModalDataProps>({ title: "", slug: "/", tags: [] });
+type ProjectContainerProps = {
+  handleClick: any
+}
 
-  function openProjectModal(project: ProjectModalDataProps) {
-    setIsOpen(true);
-    setProjectModalData(project);
-  }
+const ProjectContainer: FC<ProjectContainerProps> = ({handleClick}) => {
+  const t = translation();
 
   return (
-    <>
-      <ProjectModal
-        isOpen={isOpen}
-        setIsOpen={setIsOpen}
-        data={projectModalData}
-      />
-      <div
+      <section
         id="projects"
         className="flex min-h-full-content scroll-mt-14 flex-col bg-slate-100 px-4 py-8 dark:bg-slate-700 md:min-h-full-content-md md:scroll-mt-20 md:px-16 xl:px-32"
       >
@@ -127,7 +132,7 @@ const ProjectContainer = () => {
             return (
               <Card
                 key={i}
-                onClick={() => openProjectModal(project)}
+                onClick={() => handleClick(project)}
                 title={project.title}
                 bgColor={project["bg-color"]}
                 thumbnail={project.thumbnail}
@@ -144,8 +149,7 @@ const ProjectContainer = () => {
             </a>
           </Link>
         </div>
-      </div>
-    </>
+      </section>
   );
 };
 
@@ -153,7 +157,7 @@ const AboutContainer = () => {
   const t = translation();
 
   return (
-    <div
+    <section
       id="about"
       className="flex min-h-last-content scroll-mt-14 flex-col bg-white bg-gradient-to-tl from-violet-400 via-fuchsia-400 to-purple-400
         px-4 py-8 dark:bg-slate-900 dark:from-violet-500 dark:via-fuchsia-400 dark:to-purple-500 md:min-h-last-content-md md:scroll-mt-20 md:px-16 xl:px-32"
@@ -187,7 +191,7 @@ const AboutContainer = () => {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
