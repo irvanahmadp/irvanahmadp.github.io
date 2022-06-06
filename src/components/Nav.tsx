@@ -3,6 +3,7 @@ import classnames from "classnames";
 import { useState, useRef, FC } from "react";
 import { Transition } from "@headlessui/react";
 import { HomeIcon, MenuIcon } from "@heroicons/react/solid";
+import { Container } from "src/components";
 import { translation } from "src/hooks/useLanguage";
 
 type openParam = boolean;
@@ -23,51 +24,53 @@ const Nav = () => {
     <nav
       className={classnames(
         isNavOpen && "border-b-0 md:border-b",
-        "fixed top-0 z-10 flex h-14 w-full items-center justify-between border-b border-slate-300 bg-white/95 px-4 text-lg dark:border-slate-900 dark:bg-slate-900/75 md:h-20 md:px-16 xl:px-32"
+        "fixed top-0 z-10 w-full border-b border-slate-300 bg-white/95 text-lg dark:border-slate-900 dark:bg-slate-900/75"
       )}
     >
-      <Link href="/#home">
-        <a>
-          <HomeIcon className="hidden h-7 w-7 text-purple-500 dark:text-purple-300 md:inline" />
-          <span className="font-medium md:hidden">Irvan Ahmad P.</span>
-        </a>
-      </Link>
+      <Container className="flex h-14 items-center justify-between md:h-20">
+        <Link href="/#home">
+          <a>
+            <HomeIcon className="hidden h-7 w-7 text-purple-500 dark:text-purple-300 md:inline" />
+            <span className="font-medium md:hidden">Irvan Ahmad P.</span>
+          </a>
+        </Link>
 
-      {/* mobile */}
-      <div id="menu-mobile md:hidden">
-        <button
-          onClick={() => handleNavButton(!isNavOpen)}
-          onBlur={() => handleNavButton(false)}
-          ref={buttonNavRef}
-          className={classnames(
-            { "text-white": isNavOpen, "bg-purple-500": isNavOpen },
-            "rounded-md p-2 md:hidden"
-          )}
-        >
-          <MenuIcon className="h-7 w-7" />
-        </button>
+        {/* mobile */}
+        <div id="menu-mobile md:hidden">
+          <button
+            onClick={() => handleNavButton(!isNavOpen)}
+            onBlur={() => handleNavButton(false)}
+            ref={buttonNavRef}
+            className={classnames(
+              { "text-white": isNavOpen, "bg-purple-500": isNavOpen },
+              "rounded-md p-2 md:hidden"
+            )}
+          >
+            <MenuIcon className="h-7 w-7" />
+          </button>
 
-        <Transition
-          show={isNavOpen}
-          enter="transition duration-250"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="transition duration-250"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
-        >
-          <div className="fixed inset-x-0 top-14 flex flex-col border-b border-slate-300 dark:border-slate-900 md:relative md:hidden">
+          <Transition
+            show={isNavOpen}
+            enter="transition duration-250"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="transition duration-250"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-x-0 top-14 flex flex-col border-b border-slate-300 dark:border-slate-900 md:relative md:hidden">
+              <Menu />
+            </div>
+          </Transition>
+        </div>
+
+        {/* menu dektop */}
+        <div id="menu-desktop" className="hidden md:inline">
+          <div className="top-auto inline flex-row">
             <Menu />
           </div>
-        </Transition>
-      </div>
-
-      {/* menu dektop */}
-      <div id="menu-desktop" className="hidden md:inline">
-        <div className="top-auto inline flex-row">
-          <Menu />
         </div>
-      </div>
+      </Container>
     </nav>
   );
 };
