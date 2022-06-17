@@ -29,7 +29,7 @@ const ProjectLayout: FC<ProjectLayoutProps> = ({ children }) => {
       <Nav />
       <Setting />
       <main className="bg-slate-100 dark:bg-slate-700">
-        <Container className="flex min-h-last-content flex-col md:min-h-last-content-md md:py-8 lg:flex-row">
+        <Container paddingX="px-0" className="flex min-h-last-content flex-col md:min-h-last-content-md md:py-8 lg:flex-row">
           <article className="prose w-full max-w-none overflow-x-auto border-b border-slate-300 bg-white p-4 prose-headings:my-2 prose-h1:text-3xl prose-p:my-0 prose-code:rounded prose-code:bg-slate-200 prose-code:p-1 prose-code:font-normal prose-pre:my-4 prose-img:rounded-lg dark:prose-invert dark:border-slate-600 dark:bg-slate-800 dark:text-inherit dark:prose-code:bg-slate-700 dark:prose-pre:bg-slate-700 md:rounded-lg md:border md:p-8">
             <div className="flex items-center">
               <h1 className="flex-grow">
@@ -42,7 +42,7 @@ const ProjectLayout: FC<ProjectLayoutProps> = ({ children }) => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  className="flex h-8 w-12 items-center justify-center rounded-md border-2 border-slate-300 text-sm text-slate-900 no-underline hover:bg-slate-200 focus:outline-none dark:border-slate-400 dark:text-slate-50 dark:hover:bg-slate-500 md:h-10 md:w-16 md:pb-1 md:text-base"
+                  className="flex h-8 w-14 items-center justify-center rounded-md border-2 border-slate-300 text-sm text-slate-900 no-underline hover:bg-slate-200 focus:outline-none dark:border-slate-400 dark:text-slate-50 dark:hover:bg-slate-500 md:h-10 md:w-16 md:pb-1 md:text-base"
                   href={project.repository_url}
                 >
                   &lt; / &gt;
