@@ -9,7 +9,7 @@ import { translation } from "src/hooks/useLanguage";
 type openParam = boolean;
 
 const Nav = () => {
-  const [isNavOpen, setIsNavOpen] = useState(true);
+  const [isNavOpen, setIsNavOpen] = useState(false);
   const buttonNavRef = useRef<HTMLButtonElement>(null);
 
   function handleNavButton(open: openParam) {
