@@ -9,7 +9,7 @@ import { translation } from "src/hooks/useLanguage";
 type openParam = boolean;
 
 const Nav = () => {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(true);
   const buttonNavRef = useRef<HTMLButtonElement>(null);
 
   function handleNavButton(open: openParam) {
@@ -24,7 +24,7 @@ const Nav = () => {
     <nav
       className={classnames(
         isNavOpen && "border-b-0 md:border-b",
-        "fixed top-0 z-10 w-full border-b border-slate-300 bg-white/95 text-lg dark:border-slate-900 dark:bg-slate-900/75"
+        "fixed top-0 z-10 w-full border-b border-slate-300 bg-white/95 text-lg dark:border-slate-900 dark:bg-slate-900/95"
       )}
     >
       <Container className="flex h-14 items-center justify-between md:h-20">
