@@ -24,14 +24,14 @@ const Nav = () => {
     <nav
       className={classnames(
         isNavOpen && "border-b-0 md:border-b",
-        "fixed top-0 z-10 w-full border-b border-slate-300 bg-white/95 text-lg dark:border-slate-900 dark:bg-slate-900/90"
+        "fixed top-0 z-10 w-full border-b border-slate-300 bg-white/95 text-lg dark:border-slate-900 dark:bg-slate-900/80"
       )}
     >
       <Container className="flex h-14 items-center justify-between md:h-20">
         <Link href="/#home">
           <a>
             <HomeIcon className="hidden h-7 w-7 text-purple-500 dark:text-purple-300 md:inline" />
-            <span className="font-medium md:hidden">Irvan Ahmad P.</span>
+            <span className="font-semibold md:hidden">Irvan Ahmad P.</span>
           </a>
         </Link>
 
@@ -95,7 +95,7 @@ type NavLinkProps = {
 const NavLink: FC<NavLinkProps> = ({ href, children }) => {
   return (
     <Link href={href}>
-      <a className="bg-white/95 p-2 px-4 font-light hover:bg-slate-200 hover:text-purple-500 dark:bg-slate-900/90 dark:hover:bg-slate-800 dark:hover:text-purple-300 md:bg-inherit md:px-2 md:font-normal md:hover:bg-inherit dark:md:bg-inherit dark:md:hover:bg-inherit">
+      <a className="bg-white/95 p-2 px-4 font-medium hover:bg-slate-200 hover:text-purple-500 dark:bg-slate-900/80 dark:hover:bg-slate-800 dark:hover:text-purple-300 md:bg-inherit md:px-2 md:font-normal md:hover:bg-inherit dark:md:bg-inherit dark:md:hover:bg-inherit">
         {children}
       </a>
     </Link>
