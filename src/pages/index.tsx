@@ -49,7 +49,7 @@ const HomeContainer = () => {
   return (
     <section
       id="home"
-      className="scroll-m-14 bg-gradient-to-b from-violet-400 via-fuchsia-400 to-purple-400 dark:from-violet-500 dark:via-fuchsia-400 dark:to-purple-500 md:scroll-mt-20 md:bg-gradient-to-r"
+      className="scroll-m-14 bg-gradient-to-b from-violet-400 via-fuchsia-400 to-purple-400 dark:from-violet-500 dark:via-fuchsia-500 dark:to-purple-500 md:scroll-mt-20 md:bg-gradient-to-r"
     >
       <Container className="h-full-content-md py-20 md:h-full-content-md">
         <div className="flex min-h-full w-full items-center justify-center rounded-xl bg-gradient-to-b from-white/75 to-white/10 p-8 dark:from-black/75 dark:to-black/10">
@@ -166,7 +166,7 @@ const AboutContainer = () => {
   return (
     <section
       id="about"
-      className="scroll-mt-14 bg-white bg-gradient-to-tl from-violet-400 via-fuchsia-400 to-purple-400 dark:bg-slate-900 dark:from-violet-500 dark:via-fuchsia-400 dark:to-purple-500 md:scroll-mt-20"
+      className="scroll-mt-14 bg-white bg-gradient-to-tl from-violet-400 via-fuchsia-400 to-purple-400 dark:bg-slate-900 dark:from-violet-500 dark:via-fuchsia-500 dark:to-purple-500 md:scroll-mt-20"
     >
       <Container className="flex min-h-last-content flex-col py-8 md:min-h-last-content-md">
         <div className="text-center text-4xl font-light">{t.about.title}</div>
