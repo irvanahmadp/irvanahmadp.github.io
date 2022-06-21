@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backdropBlur: {
+        xs: '2px',
+      },
       violet: colors.violet,
       spacing: {
         "full-content": "calc(100vh - 3.5rem)", //3.5rem = h-14, nav height

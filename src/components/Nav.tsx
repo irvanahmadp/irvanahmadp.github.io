@@ -24,7 +24,7 @@ const Nav = () => {
     <nav
       className={classnames(
         isNavOpen && "border-b-0 md:border-b",
-        "fixed top-0 z-10 w-full border-b border-slate-300 bg-white/95 text-lg dark:border-slate-900 dark:bg-slate-900/80"
+        "fixed top-0 z-10 w-full border-b border-slate-300 bg-white/95 text-lg dark:border-slate-900 dark:bg-slate-900/80 backdrop-blur-xs"
       )}
     >
       <Container className="flex h-14 items-center justify-between md:h-20">
@@ -58,7 +58,7 @@ const Nav = () => {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-x-0 top-14 flex flex-col border-b border-slate-300 dark:border-slate-900 md:relative md:hidden">
+            <div className="fixed inset-x-0 top-14 flex flex-col border-b border-slate-300 dark:border-slate-900 backdrop-blur-xs md:relative md:hidden">
               <Menu />
             </div>
           </Transition>
