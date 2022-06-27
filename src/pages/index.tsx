@@ -71,7 +71,7 @@ const ArticleContainer = () => {
       id="articles"
       className="scroll-mt-14 dark:bg-slate-900 md:scroll-mt-20"
     >
-      <Container className="min-h-full-content py-8 md:min-h-full-content-md">
+      <Container className="py-8">
         <div className="mb-8 text-center text-4xl font-light">
           {t.article.title}
         </div>
@@ -129,7 +129,7 @@ const ProjectContainer: FC<ProjectContainerProps> = ({ handleClick }) => {
       id="projects"
       className="scroll-mt-14 bg-slate-100 dark:bg-slate-700 md:scroll-mt-20"
     >
-      <Container className="flex min-h-full-content flex-col py-8 md:min-h-full-content-md">
+      <Container className="flex flex-col py-8">
         <div className="mb-8 text-center text-4xl font-light">
           {t.project.title}
         </div>
