@@ -114,7 +114,7 @@ const Switcher: FC<SwitcherProps> = ({ className, children, onClick }) => {
 };
 
 type ThemeProps = {
-  theme: string;
+  theme: string | undefined;
   className: string;
 };
 
