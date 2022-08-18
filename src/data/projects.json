@@ -47,6 +47,14 @@
     "tags": ["Golang", "API"]
   },
   {
+    "title": "Notes App - Frontend",
+    "bg-color": "bg-slate-900",
+    "repository_url": "https://github.com/IrvanAhmadP/Notes-App-Frontend",
+    "thumbnail": "https://raw.githubusercontent.com/IrvanAhmadP/Notes-App-Frontend/master/images/Screenshot%20Notes-App-Frontend.webp",
+    "slug": "/projects/Notes-App-Frontend",
+    "tags": ["React", "TypeScript", "TailwindCSS"]
+  },
+  {
     "title": "Drink Shop",
     "bg-color": "bg-slate-900",
     "repository_url": "https://github.com/irvanahmadp/Toko-Minuman",
