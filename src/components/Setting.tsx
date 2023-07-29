@@ -56,7 +56,7 @@ const ThemeSetting = () => {
 
   return (
     <Listbox value={theme} onChange={setTheme}>
-      <Listbox.Button>
+      <Listbox.Button aria-label="change theme">
         <Switcher>
           <ThemeIcon theme={theme} className="h-6 w-6" />
         </Switcher>

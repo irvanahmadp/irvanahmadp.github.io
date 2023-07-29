@@ -38,6 +38,7 @@ const Nav = () => {
         {/* mobile */}
         <div id="menu-mobile md:hidden">
           <button
+            aria-label="menu"
             onClick={() => handleNavButton(!isNavOpen)}
             onBlur={() => handleNavButton(false)}
             ref={buttonNavRef}
