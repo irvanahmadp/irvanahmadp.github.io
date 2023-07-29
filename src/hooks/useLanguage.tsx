@@ -32,10 +32,12 @@ const LanguageProvider: FC<LanguageProviderProps> = ({ children }) => {
   useEffect(() => {
     const languageStorage = localStorage.getItem("lang") === "id" ? "id" : "en";
     setLanguage(languageStorage);
+    setLangAttr(languageStorage);
   }, []);
 
   useEffect(() => {
     localStorage.setItem("lang", language);
+    setLangAttr(language);
   }, [language]);
 
   const value = { language, setLanguage };
@@ -54,6 +56,10 @@ function translation() {
   }
 
   return en;
+}
+
+function setLangAttr(language: string) {
+  document.documentElement.lang = language
 }
 
 export { LanguageProvider, useLanguage, translation };
