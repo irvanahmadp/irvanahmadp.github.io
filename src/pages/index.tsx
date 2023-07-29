@@ -151,7 +151,7 @@ const ProjectContainer: FC<ProjectContainerProps> = ({ handleClick }) => {
         <div className="m-auto mt-8 mb-2">
           <Link href="/projects#">
             <a>
-              <Button>See All Projects</Button>
+              <Button>View All Projects</Button>
             </a>
           </Link>
         </div>
