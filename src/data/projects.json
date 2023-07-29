@@ -6,7 +6,10 @@
     "repository_url": "https://github.com/irvanahmadp/RBuilder",
     "thumbnail": "https://raw.githubusercontent.com/IrvanAhmadPrasetya/RBuilder/master/images/Screenshot%20-%20RBuilder.webp",
     "slug": "/projects/RBuilder",
-    "tags": ["React", "Bulma"]
+    "tags": [
+      "React",
+      "Bulma"
+    ]
   },
   {
     "title": "AzaleaBook - Theme for mdbook",
@@ -14,7 +17,10 @@
     "repository_url": "https://github.com/IrvanAhmadP/azaleabook-theme",
     "thumbnail": "https://raw.githubusercontent.com/IrvanAhmadP/azaleabook-theme/main/preview/AzaleaBook-Theme-2.webp",
     "slug": "/projects/AzaleaBook-Theme",
-    "tags": ["Theme", "MDBook"]
+    "tags": [
+      "Theme",
+      "MDBook"
+    ]
   },
   {
     "title": "RN Sign Up Template",
@@ -22,14 +28,21 @@
     "repository_url": "https://github.com/irvanahmadp/RNSignUpTemplate",
     "thumbnail": "https://raw.githubusercontent.com/IrvanAhmadPrasetya/RNSignUpTemplate/master/images/Screenshot.PNG",
     "slug": "/projects/RNSignUpTemplate",
-    "tags": ["React Native", "Template"]
+    "tags": [
+      "React Native",
+      "Template"
+    ]
   },
   {
     "title": "Bookshelf API",
-    "bg-color": "bg-green-500",
+    "bg-color": "bg-green-600",
     "repository_url": "https://github.com/IrvanAhmadP/Bookshelf-API",
     "slug": "/projects/Bookshelf-API",
-    "tags": ["JavaScript", "NodeJS", "API"]
+    "tags": [
+      "JavaScript",
+      "NodeJS",
+      "API"
+    ]
   },
   {
     "title": "Go Libraries and Frameworks",
@@ -37,14 +50,21 @@
     "bg-color": "bg-blue-500",
     "repository_url": "https://github.com/IrvanAhmadP/Go-Libraries-and-Frameworks",
     "slug": "/projects/Go-Libraries-and-Frameworks",
-    "tags": ["Golang", "Go Library", "Go Framework"]
+    "tags": [
+      "Golang",
+      "Go Library",
+      "Go Framework"
+    ]
   },
   {
     "title": "Indonesian Region API",
-    "bg-color": "bg-green-500",
+    "bg-color": "bg-green-600",
     "repository_url": "https://github.com/IrvanAhmadP/GoApiWilayahIndonesia",
     "slug": "/projects/Indonesian-Region-API",
-    "tags": ["Golang", "API"]
+    "tags": [
+      "Golang",
+      "API"
+    ]
   },
   {
     "title": "Notes App - Frontend",
@@ -52,7 +72,11 @@
     "repository_url": "https://github.com/IrvanAhmadP/Notes-App-Frontend",
     "thumbnail": "https://raw.githubusercontent.com/IrvanAhmadP/Notes-App-Frontend/master/images/Screenshot%20Notes-App-Frontend.webp",
     "slug": "/projects/Notes-App-Frontend",
-    "tags": ["React", "TypeScript", "TailwindCSS"]
+    "tags": [
+      "React",
+      "TypeScript",
+      "TailwindCSS"
+    ]
   },
   {
     "title": "Drink Shop",
@@ -60,7 +84,10 @@
     "repository_url": "https://github.com/irvanahmadp/Toko-Minuman",
     "thumbnail": "https://raw.githubusercontent.com/IrvanAhmadP/Toko-Minuman/master/screenshot/Screenshot%201.webp",
     "slug": "/projects/Drink-Shop",
-    "tags": ["PHP", "Bootstrap"]
+    "tags": [
+      "PHP",
+      "Bootstrap"
+    ]
   },
   {
     "title": "BW Admin",
@@ -68,6 +95,9 @@
     "repository_url": "https://github.com/IrvanAhmadP/BW-Admin",
     "thumbnail": "https://raw.githubusercontent.com/IrvanAhmadP/BW-Admin/master/BW%20Admin.png",
     "slug": "/projects/BW-Admin",
-    "tags": ["HTML", "Bootstrap"]
+    "tags": [
+      "HTML",
+      "Bootstrap"
+    ]
   }
 ]
