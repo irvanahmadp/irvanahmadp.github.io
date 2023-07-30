@@ -205,6 +205,7 @@ const AboutContainer = () => {
 
 const meta = {
   title: "Irvan Ahmad P",
+  description: "Irvan Ahmad's personal website"
 };
 
 Page.getLayout = function getLayout(page: ReactElement) {

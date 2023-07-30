@@ -25,6 +25,10 @@ const ProjectLayout: FC<ProjectLayoutProps> = ({ children }) => {
     <>
       <Head>
         <title>{project.title}</title>
+        <meta
+          name="description"
+          content={project.description}
+        />
       </Head>
       <Nav />
       <Setting />

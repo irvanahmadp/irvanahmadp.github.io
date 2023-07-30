@@ -5,6 +5,7 @@ import { Nav, Setting, Footer } from "src/components";
 type BasicLayoutProps = {
   meta: {
     title: string;
+    description: string;
   };
   children: ReactElement;
 };
@@ -14,6 +15,10 @@ const BasicLayout: FC<BasicLayoutProps> = ({ meta, children }) => {
     <>
       <Head>
         <title>{meta.title}</title>
+        <meta
+          name="description"
+          content={meta.description}
+        />
       </Head>
       <Nav />
       <Setting />
