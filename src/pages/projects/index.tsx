@@ -41,6 +41,7 @@ const Projects = () => {
 
 const meta = {
   title: "Projects",
+  description: "Projects"
 };
 
 Projects.getLayout = function getLayout(page: ReactElement) {
