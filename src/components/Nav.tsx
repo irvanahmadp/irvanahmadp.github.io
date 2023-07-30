@@ -29,7 +29,7 @@ const Nav = () => {
     >
       <Container className="flex h-14 items-center justify-between md:h-20">
         <Link href="/#home">
-          <a>
+          <a aria-label="home">
             <HomeIcon className="hidden h-7 w-7 text-purple-500 dark:text-purple-300 md:inline" />
             <span className="font-semibold md:hidden">Irvan Ahmad P.</span>
           </a>
