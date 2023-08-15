@@ -23,7 +23,7 @@ const Projects = () => {
                   <a>
                     <Card
                       title={project.title}
-                      bgColor={project["bg-color"]}
+                      bgColor={`${project["bg-color"]} dark:bg-slate-900/75`}
                       thumbnail={project.thumbnail}
                       tags={project.tags}
                       placeholderText={t.project.view_project}

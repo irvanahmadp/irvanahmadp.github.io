@@ -49,10 +49,10 @@ const HomeContainer = () => {
   return (
     <section
       id="home"
-      className="scroll-m-14 bg-gradient-to-b from-violet-400 via-fuchsia-400 to-purple-400 dark:from-violet-500 dark:via-fuchsia-500 dark:to-purple-500 md:scroll-mt-20 md:bg-gradient-to-r"
+      className="scroll-m-14 bg-gradient-to-b from-violet-400 via-fuchsia-400 to-purple-400 dark:bg-black dark:bg-none md:scroll-mt-20 md:bg-gradient-to-r"
     >
       <Container className="h-full-content-md py-20 md:h-full-content-md">
-        <div className="flex min-h-full w-full items-center justify-center rounded-xl bg-gradient-to-b from-white/75 to-white/10 p-8 dark:from-black/75 dark:to-black/10">
+        <div className="flex min-h-full w-full items-center justify-center rounded-xl bg-gradient-to-b from-white/75 to-white/10 p-8 dark:from-white/25 dark:to-white/1">
           <div className="text-center text-3xl md:text-5xl md:leading-tight">
             <p className="font-bold">{t.home.greeting}</p>
             <p className="font-light md:font-extralight">{t.home.message}</p>
@@ -140,7 +140,7 @@ const ProjectContainer: FC<ProjectContainerProps> = ({ handleClick }) => {
                 key={i}
                 onClick={() => handleClick(project)}
                 title={project.title}
-                bgColor={project["bg-color"]}
+                bgColor={`${project["bg-color"]} dark:bg-slate-900/75`}
                 thumbnail={project.thumbnail}
                 tags={project.tags}
                 placeholderText={t.project.view_project}
@@ -166,12 +166,12 @@ const AboutContainer = () => {
   return (
     <section
       id="about"
-      className="scroll-mt-14 bg-white bg-gradient-to-tl from-violet-400 via-fuchsia-400 to-purple-400 dark:bg-slate-900 dark:from-violet-500 dark:via-fuchsia-500 dark:to-purple-500 md:scroll-mt-20"
+      className="scroll-mt-14 bg-white bg-gradient-to-tl from-violet-400 via-fuchsia-400 to-purple-400 dark:bg-black dark:bg-none md:scroll-mt-20"
     >
       <Container className="flex min-h-last-content flex-col py-8 md:min-h-last-content-md">
         <div className="text-center text-4xl font-light">{t.about.title}</div>
 
-        <div className="m-auto rounded-lg bg-white/75 py-4 px-8 dark:bg-slate-900/75 md:w-[28rem]">
+        <div className="m-auto rounded-lg bg-white/75 py-4 px-8 dark:bg-white/20 md:w-[28rem]">
           <p className="text-3xl font-light leading-snug dark:font-normal">
             {t.about.greeting}
           </p>
