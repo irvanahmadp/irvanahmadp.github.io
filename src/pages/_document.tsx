@@ -10,7 +10,7 @@ function MyDocument() {
         <NextScript />
         <Script
           strategy="lazyOnload"
-          src={`https://www.googletagmanager.com/gtag/js?id=G-F47X5MD4V2`}
+          src={`https://www.googletagmanager.com/gtag/js?id=G-SK52D5FY7N`}
         />
         <Script
           strategy="lazyOnload"
@@ -21,7 +21,7 @@ function MyDocument() {
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
 
-              gtag('config', 'G-F47X5MD4V2');
+              gtag('config', 'G-SK52D5FY7N');
             `,
           }}
         />
