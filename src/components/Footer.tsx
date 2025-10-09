@@ -1,20 +1,7 @@
-import Link from "next/link";
-import { useEffect, useState } from "react";
-
-const Footer = () => {
-  const [year, setYear] = useState<number>();
-
-  useEffect(() => {
-    setYear(new Date().getFullYear())
-  }, [])
-
+export default function Footer() {
   return (
-    <footer className="inset-0 top-auto flex h-16 items-center justify-center border-t border-slate-900 bg-slate-700 text-white dark:bg-slate-800">
-      Copyright &copy; {year}
-      &nbsp;
-      <Link href="/">Irvan Ahmad P</Link>
-    </footer>
-  );
-};
-
-export default Footer;
+    <div className="max-w-7xl text-center mx-auto px-4 text-sm py-4 text-slate-400">
+      <span>&copy; 2025 Irvan Ahmad P. All rights reserved.</span>
+    </div>
+  )
+}

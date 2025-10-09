@@ -1,0 +1,25 @@
+---
+import "../assets/app.css";
+const { title } = Astro.props;
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+---
+
+<html class="snap-y scroll-smooth md:snap-mandatory" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+    </head>
+    <body class="antialiased">
+        <Navbar />
+
+        <div class="min-h-[calc(100vh-100px)] max-w-7xl mx-auto px-4">
+            <slot />
+        </div>
+
+        <Footer />
+    </body>
+</html>

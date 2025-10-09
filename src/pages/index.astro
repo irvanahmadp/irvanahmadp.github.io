@@ -1,0 +1,19 @@
+---
+import AboutSection from "@components/Section/AboutSection";
+import Layout from "../layouts/Layout.astro";
+import ArticlesSection from "@components/Section/ArticlesSection";
+import HeroSection from "@components/Section/HeroSection";
+import ContactSection from "@components/Section/ContactSection";
+---
+
+<Layout title="Irvan Ahmad P.">
+	<HeroSection client:load />
+
+	<div class="divider"></div>
+	<ArticlesSection client:load />
+
+	<div class="divider"></div>
+	<AboutSection />
+
+	<ContactSection />
+</Layout>
