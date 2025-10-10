@@ -82,15 +82,16 @@ export default function ProjectsSection() {
                 exit={{opacity: 0}}
               >
                 <div className="rounded aspect-[3/1.5] overflow-hidden bg-primary/25 flex justify-center items-center">
-                  <h3 className="font-semibold text-2xl tracking-tight">{project.title}</h3>
+                  <span className="font-semibold text-2xl tracking-tight">{project.title}</span>
                 </div>
 
-                <div className="flex gap-2">
+                <div className="flex gap-2 pt-1">
                   {project.tags.map(tag => (
                     <div className="badge badge-soft badge-success">{tag}</div>
                   ))}
                 </div>
 
+                <h3 className="font-medium text-lg tracking-tight">{project.title}</h3>
                 <p className="text-slate-400">{project.description}</p>
 
                 <div className="flex gap-2">

@@ -10,7 +10,7 @@ export default function HeroSection(){
 
   return (
     <div className="min-h-screen">
-      <section className="pt-14 pb-12 md:pt-20 md:pb-16 gap-8 flex flex-col lg:flex-row">
+      <section className="pt-14 pb-12 md:pt-20 md:pb-16 gap-8 flex flex-col md:flex-row">
         <div className="flex-1">
           <div className="inline-flex px-2.5 py-4 text-sm gap-2 items-center text-slate-500 dark:text-slate-300">
             <span className="size-1.5 rounded-full animate-pulse bg-green-500"></span>
@@ -44,7 +44,7 @@ export default function HeroSection(){
         </div>
 
         <motion.div
-          className="hidden lg:flex justify-center lg:justify-end flex-1 size-[400px] rounded overflow-hidden"
+          className="hidden md:flex justify-center lg:justify-end flex-1 size-[400px] rounded overflow-hidden"
           initial={{opacity: 0, x: 125}}
           animate={{opacity: 1, x: 0}}
           transition={{delay: 1.5}}
