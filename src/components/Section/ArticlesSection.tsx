@@ -44,7 +44,7 @@ export default function ArticlesSection() {
                 className="group space-y-2 hover:-translate-y-0.5"
               >
                 <div className="overflow-hidden aspect-[3/2] rounded">
-                  <img alt="article" className="w-full h-full object-cover" src={article.thumbnail} />
+                  <img alt={`${article.title}`} className="w-full h-full object-cover" src={article.thumbnail} />
                 </div>
 
                 <div className="flex gap-2 items-center">

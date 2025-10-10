@@ -1,0 +1,93 @@
+[
+    {
+        "title": "RBuilder",
+        "category": "Website",
+        "demo": "",
+        "description": "A simple company profile website for a construction business, showing basic information and contact details.",
+        "code": "https://github.com/irvanahmadp/RBuilder",
+        "slug": "/projects/RBuilder",
+        "tags": [
+            "React",
+            "Bulma"
+        ]
+    },
+    {
+        "title": "AzaleaBook - Theme for mdbook",
+        "category": "Website",
+        "description": "A custom mdBook theme built for readability and simplicity, featuring responsive design for technical documentation.",
+        "code": "https://github.com/IrvanAhmadP/azaleabook-theme",
+        "slug": "/projects/AzaleaBook-Theme",
+        "tags": [
+            "Theme",
+            "MDBook"
+        ]
+    },
+    {
+        "title": "Bookshelf API",
+        "category": "API",
+        "description": "A RESTful API that allows users to manage book data.",
+        "slug": "/projects/Bookshelf-API",
+        "code": "https://github.com/IrvanAhmadP/Bookshelf-API",
+        "tags": [
+            "JavaScript",
+            "NodeJS",
+            "API"
+        ]
+    },
+    {
+        "title": "Go Libraries and Frameworks",
+        "description": "List of Go frameworks and libraries with github starts, forks, last update, etc.",
+        "slug": "/projects/Go-Libraries-and-Frameworks",
+        "code": "https://github.com/IrvanAhmadP/Go-Libraries-and-Frameworks",
+        "tags": [
+            "Golang",
+            "Go Library",
+            "Go Framework"
+        ]
+    },
+    {
+        "title": "Indonesian Region API",
+        "category": "API",
+        "description": "A structured API providing detailed data about Indonesia’s administrative regions, including provinces, cities, districts, and villages.",
+        "slug": "/projects/Indonesian-Region-API",
+        "code": "https://github.com/IrvanAhmadP/GoApiWilayahIndonesia",
+        "tags": [
+            "Golang",
+            "API"
+        ]
+    },
+    {
+        "title": "Notes App - Frontend",
+        "category": "Website",
+        "description": "A simple and responsive frontend interface for a note-taking application.",
+        "code": "https://github.com/IrvanAhmadP/Notes-App-Frontend",
+        "slug": "/projects/Notes-App-Frontend",
+        "tags": [
+            "React",
+            "TypeScript",
+            "TailwindCSS"
+        ]
+    },
+    {
+        "title": "Drink Shop",
+        "category": "Website",
+        "description": "A web-based platform to manage beverage sales, track inventory, and handle transactions.",
+        "code": "https://github.com/irvanahmadp/Toko-Minuman",
+        "slug": "/projects/Drink-Shop",
+        "tags": [
+            "PHP",
+            "Bootstrap"
+        ]
+    },
+    {
+        "title": "RN Sign Up Template",
+        "category": "Mobile",
+        "description": "A basic login page built with React Native.",
+        "code": "https://github.com/irvanahmadp/RNSignUpTemplate",
+        "slug": "/projects/RNSignUpTemplate",
+        "tags": [
+            "React Native",
+            "Template"
+        ]
+    }
+]

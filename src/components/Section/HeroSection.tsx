@@ -3,6 +3,7 @@ import { motion } from "motion/react"
 import { SendIcon, SparklesIcon } from "lucide-react"
 import { TextEffect } from '@components/motion-primitives/text-effect'
 import ProjectsSection from "@components/Section/ProjectsSection"
+import heroImage from '@assets/images/hero.jpg';
 
 export default function HeroSection(){
   const [heroDone, setHeroDone] = useState(false)
@@ -43,13 +44,13 @@ export default function HeroSection(){
         </div>
 
         <motion.div
-          className="flex justify-center lg:justify-end flex-1"
+          className="hidden lg:flex justify-center lg:justify-end flex-1 size-[400px] rounded overflow-hidden"
           initial={{opacity: 0, x: 125}}
           animate={{opacity: 1, x: 0}}
           transition={{delay: 1.5}}
           onAnimationComplete={() => setHeroDone(true)}
         >
-          <img src="https://placehold.co/400x400" />
+          <img src={heroImage.src} className="object-cover" alt="Irvan Ahmad P."/>
         </motion.div>
       </section>
 

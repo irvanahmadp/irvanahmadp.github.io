@@ -1,8 +1,11 @@
+import { useState } from "react"
 import { CodeIcon, MonitorIcon } from "lucide-react"
-import { motion, stagger } from "motion/react"
+import { AnimatePresence, motion, stagger } from "motion/react"
+import {cn} from "../../lib/utils"
+import projects from "../../data/projects.json"
 
 export default function ProjectsSection() {
-  const works = [0,1,2,3]
+  const [category, setCategory] = useState("All")
 
   const container = {
     hidden: {opacity: 0},
@@ -31,43 +34,78 @@ export default function ProjectsSection() {
         <div className="flex justify-between">
           <p className="text-slate-400">Some of my personal projects.</p>
           <div className="flex gap-1.5">
-            <button className="btn btn-xs btn-primary rounded-4xl">All</button>
-            <button className="btn btn-xs btn-outline rounded-4xl">Website</button>
-            <button className="btn btn-xs btn-outline rounded-4xl">API</button>
-            <button className="btn btn-xs btn-outline rounded-4xl">Mobile</button>
+            <button
+              onClick={() => setCategory("All")}
+              className={cn("btn btn-xs rounded-4xl", category === "All" ? "btn-primary" : "btn-outline")}
+            >
+              All
+            </button>
+            <button
+              onClick={() => setCategory("Website")}
+              className={cn("btn btn-xs rounded-4xl", category === "Website" ? "btn-primary" : "btn-outline")}
+            >
+              Website
+            </button>
+            <button
+              onClick={() => setCategory("API")}
+              className={cn("btn btn-xs rounded-4xl", category === "API" ? "btn-primary" : "btn-outline")}
+            >
+              API
+            </button>
+            <button
+              onClick={() => setCategory("Mobile")}
+              className={cn("btn btn-xs rounded-4xl", category === "Mobile" ? "btn-primary" : "btn-outline")}
+            >
+              Mobile
+            </button>
           </div>
         </div>
       </motion.div>
 
       <motion.div
-        className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+        key={category}
+        className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
         initial="hidden"
         whileInView="show"
         variants={container}
         viewport={{once: true}}
       >
-        {works.map((work) => (
-          <motion.div
-            className="space-y-2"
-            variants={item}
-          >
-            <div className="rounded aspect-[3/2] overflow-hidden">
-              <img alt="work" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1600&auto=format&fit=crop"/>
-            </div>
+        <AnimatePresence>
+          {projects.map((project, i) => {
+            if (category !== "All" && project.category !== category) return
 
-            <div className="flex gap-2">
-              <div className="badge badge-soft badge-success">React</div>
-            </div>
+            return (
+              <motion.div
+                key={i}
+                className="space-y-2"
+                variants={item}
+                exit={{opacity: 0}}
+              >
+                <div className="rounded aspect-[3/1.5] overflow-hidden bg-primary/25 flex justify-center items-center">
+                  <h3 className="font-semibold text-2xl tracking-tight">{project.title}</h3>
+                </div>
 
-            <h3 className="font-medium text-lg tracking-tight">OrderFlow</h3>
-            <p className="text-slate-400">Website for manage order</p>
+                <div className="flex gap-2">
+                  {project.tags.map(tag => (
+                    <div className="badge badge-soft badge-success">{tag}</div>
+                  ))}
+                </div>
 
-            <div className="flex gap-2">
-              <button className="btn btn-xs btn-primary"><CodeIcon className="size-4"/> Code</button>
-              <button className="btn btn-xs btn-secondary"><MonitorIcon className="size-4"/> Demo</button>
-            </div>
-          </motion.div>
-        ))}
+                <p className="text-slate-400">{project.description}</p>
+
+                <div className="flex gap-2">
+                  { project.code
+                    && <a href={project.code} className="btn btn-xs btn-primary"><CodeIcon className="size-4"/> Code</a>
+                  }
+
+                  <a href={project.demo ? project.demo : project.code} className="btn btn-xs btn-secondary">
+                    <MonitorIcon className="size-4"/> Demo
+                  </a>
+                </div>
+              </motion.div>
+            )
+          })}
+        </AnimatePresence>
       </motion.div>
     </section>
   )
