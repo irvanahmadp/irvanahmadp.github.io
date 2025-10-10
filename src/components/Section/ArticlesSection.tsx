@@ -37,9 +37,10 @@ export default function ArticlesSection() {
         viewport={{once: true}}
       >
         {
-          articles.map(article => {
+          articles.map((article, i) => {
             return (
               <motion.article
+                key={i}
                 variants={item}
                 className="group space-y-2 hover:-translate-y-0.5"
               >
@@ -48,8 +49,8 @@ export default function ArticlesSection() {
                 </div>
 
                 <div className="flex gap-2 items-center">
-                  { article.tags.map((tag) => (
-                    <div className="badge badge-outline badge-success badge-sm rounded-sm">{tag}</div>
+                  { article.tags.map((tag, i) => (
+                    <div key={i} className="badge badge-outline badge-success badge-sm rounded-sm">{tag}</div>
                   ))}
                   <span className="text-xs text-slate-400">{article.read_time}</span>
                 </div>
