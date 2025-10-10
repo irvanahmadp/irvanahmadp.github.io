@@ -9,8 +9,8 @@ export default function AboutSection() {
       </div>
 
       <div className="md:col-span-2 space-y-4">
-        <p className="text-slate-800 dark:text-slate-300">I care about user experience, edge cases, and how my work affects users. I also value writing clean, maintainable code that’s easy to update when needed.</p>
-        <p className="text-slate-800 dark:text-slate-300">My favorite stack is the React ecosystem and Tailwind CSS. I also have experience with other technologies like Laravel, Bootstrap, and CodeIgniter.</p>
+        <p className="text-slate-300">I care about user experience, edge cases, and how my work affects users. I also value writing clean, maintainable code that’s easy to update when needed.</p>
+        <p className="text-slate-300">My favorite stack is the React ecosystem and Tailwind CSS. I also have experience with other technologies like Laravel, Bootstrap, and CodeIgniter.</p>
 
         <div className="flex gap-2">
           <a href="https://www.linkedin.com/in/irvanahmadp/" target="_blank" className="btn btn-primary"><MailIcon className="size-4" /> Get in touch</a>

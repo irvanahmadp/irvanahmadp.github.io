@@ -48,7 +48,7 @@ export default function ProjectsSection() {
       >
         {works.map((work) => (
           <motion.div
-            className="shadow rounded-lg space-y-2"
+            className="space-y-2"
             variants={item}
           >
             <div className="rounded aspect-[3/2] overflow-hidden">
