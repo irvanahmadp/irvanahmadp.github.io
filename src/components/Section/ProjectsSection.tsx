@@ -31,9 +31,9 @@ export default function ProjectsSection() {
         viewport={{once: true}}
       >
         <h2 className="text-3xl font-medium">Selected Projects</h2>
-        <div className="flex justify-between">
+        <div className="flex flex-col space-y-4 md:flex-row justify-between">
           <p className="text-slate-400">Some of my personal projects.</p>
-          <div className="flex gap-1.5">
+          <div className="flex gap-1.5 justify-center">
             <button
               onClick={() => setCategory("All")}
               className={cn("btn btn-xs rounded-4xl", category === "All" ? "btn-primary" : "btn-outline")}
@@ -77,7 +77,7 @@ export default function ProjectsSection() {
             return (
               <motion.div
                 key={i}
-                className="space-y-2"
+                className="space-y-2 card bg-base-200"
                 variants={item}
                 exit={{opacity: 0}}
               >
@@ -85,23 +85,27 @@ export default function ProjectsSection() {
                   <span className="font-semibold text-2xl tracking-tight">{project.title}</span>
                 </div>
 
-                <div className="flex gap-2 pt-1">
-                  {project.tags.map(tag => (
-                    <div className="badge badge-soft badge-success">{tag}</div>
-                  ))}
-                </div>
+                <div className="card-body">
+                  <div className="flex gap-2">
+                    {project.tags.map(tag => (
+                      <div className="badge badge-soft badge-success">{tag}</div>
+                    ))}
+                  </div>
 
-                <h3 className="font-medium text-lg tracking-tight">{project.title}</h3>
-                <p className="text-slate-400">{project.description}</p>
+                  <h3 className="font-medium text-lg tracking-tight">{project.title}</h3>
+                  <p className="text-slate-400">{project.description}</p>
 
-                <div className="flex gap-2">
-                  { project.code
-                    && <a href={project.code} className="btn btn-xs btn-primary"><CodeIcon className="size-4"/> Code</a>
-                  }
+                  <div className="flex gap-2">
+                    { project.code
+                      && <a href={project.code} className="btn btn-xs btn-primary"><CodeIcon className="size-4"/> Code</a>
+                    }
 
-                  <a href={project.demo ? project.demo : project.code} className="btn btn-xs btn-secondary">
-                    <MonitorIcon className="size-4"/> Demo
-                  </a>
+                    { project.demo &&
+                      <a href={project.demo} className="btn btn-xs btn-secondary">
+                        <MonitorIcon className="size-4"/> Demo
+                      </a>
+                    }
+                  </div>
                 </div>
               </motion.div>
             )

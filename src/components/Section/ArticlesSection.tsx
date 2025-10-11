@@ -42,26 +42,28 @@ export default function ArticlesSection() {
               <motion.article
                 key={i}
                 variants={item}
-                className="group space-y-2 hover:-translate-y-0.5"
+                className="group space-y-2 hover:-translate-y-0.5 card bg-base-200"
               >
-                <div className="overflow-hidden aspect-[3/2] rounded">
+                <div className="overflow-hidden aspect-[3/2] rounded-t">
                   <img alt={`${article.title}`} className="w-full h-full object-cover" src={article.thumbnail} />
                 </div>
 
-                <div className="flex gap-2 items-center">
-                  { article.tags.map((tag, i) => (
-                    <div key={i} className="badge badge-outline badge-success badge-sm rounded-sm">{tag}</div>
-                  ))}
-                  <span className="text-xs text-slate-400">{article.read_time}</span>
-                </div>
+                <div className="card-body">
+                  <div className="flex gap-2 items-center">
+                    { article.tags.map((tag, i) => (
+                      <div key={i} className="badge badge-outline badge-success badge-sm rounded-sm">{tag}</div>
+                    ))}
+                    <span className="text-xs text-slate-400">{article.read_time}</span>
+                  </div>
 
-                <h3 className="font-medium text-lg tracking-tight group-hover:underline decoration-zinc-500/50 underline-offset-2">{article.title}</h3>
-                <p className="text-slate-400">{article.desc}</p>
-                <div className="flex justify-between">
-                  <span className="text-xs text-slate-500">{article.publish_date}</span>
-                  <a href={article.url} target="_blank">
-                    Read <ArrowRightIcon className="size-5 inline" />
-                  </a>
+                  <h3 className="font-medium text-lg tracking-tight group-hover:underline decoration-zinc-500/50 underline-offset-2">{article.title}</h3>
+                  <p className="text-slate-400">{article.desc}</p>
+                  <div className="flex justify-between">
+                    <span className="text-xs text-slate-500">{article.publish_date}</span>
+                    <a href={article.url} target="_blank">
+                      Read <ArrowRightIcon className="size-5 inline" />
+                    </a>
+                  </div>
                 </div>
               </motion.article>
             )

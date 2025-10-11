@@ -39,6 +39,7 @@
         "description": "List of Go frameworks and libraries with github starts, forks, last update, etc.",
         "slug": "/projects/Go-Libraries-and-Frameworks",
         "code": "https://github.com/IrvanAhmadP/Go-Libraries-and-Frameworks",
+        "demo": "https://github.com/irvanahmadp/Go-Libraries-and-Frameworks/blob/main/README.md",
         "tags": [
             "Golang",
             "Go Library",
