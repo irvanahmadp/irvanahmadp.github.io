@@ -5,7 +5,7 @@ export default function Navbar() {
     <div className="navbar z-20 bg-base-200/70 backdrop-blur-xl fixed shadow-sm">
       <div className="navbar-start">
         <a className="flex items-center gap-2 group" href="/">
-          <div className="w-8 h-8 text-primary-content bg-primary flex rounded-md items-center justify-center ring-1 ring-zinc-200 dark:ring-zinc-800 ring-inset">IA</div>
+          <div className="w-8 h-8 text-primary-content bg-primary flex rounded-md items-center justify-center">IA</div>
           <span>Irvan Ahmad P.</span>
         </a>
       </div>
@@ -18,9 +18,9 @@ export default function Navbar() {
 
       <div className="navbar-end">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
+          <button tabIndex={0} role="button" aria-label="Navigation menu" className="btn btn-ghost md:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
-          </div>
+          </button>
           <div className="relative">
             <ul
               tabIndex={0}
