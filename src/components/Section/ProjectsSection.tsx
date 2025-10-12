@@ -93,7 +93,7 @@ export default function ProjectsSection() {
                   </div>
 
                   <h3 className="font-medium text-lg tracking-tight">{project.title}</h3>
-                  <p className="text-slate-400">{project.description}</p>
+                  <p className="text-slate-300 text-base">{project.description}</p>
 
                   <div className="flex gap-2">
                     { project.code
