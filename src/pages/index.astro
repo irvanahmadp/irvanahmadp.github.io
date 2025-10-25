@@ -1,27 +1,27 @@
 ---
-import AboutSection from "@components/Section/AboutSection";
-import Layout from "../layouts/Layout.astro";
-import ArticlesSection from "@components/Section/ArticlesSection";
-import HeroSection from "@components/Section/HeroSection";
-import ContactSection from "@components/Section/ContactSection";
+import Layout from "../layouts/layout.astro";
+import { AboutSection } from "@components/section/about-section";
+import { ArticlesSection } from "@components/section/articles-section";
+import { HeroSection } from "@components/section/hero-section";
+import { ContactSection } from "@components/section/contact-section";
 ---
 
 <Layout title="Irvan Ahmad P.">
-	<Fragment slot="meta">
-		<title>Irvan Ahmad P. | Software Engineer</title>
-		<meta
-			name="description"
-			content="I’m Irvan, a developer who loves building clean, modern apps that make a real impact. I care about the small details that enhance user experience. I focus on web development — building APIs, front-end interfaces, and full-stack applications."
-		/>
-	</Fragment>
+    <Fragment slot="meta">
+        <title>Irvan Ahmad P. | Software Engineer</title>
+        <meta
+            name="description"
+            content="I’m Irvan, a developer who loves building clean, modern apps that make a real impact. I care about the small details that enhance user experience. I focus on web development — building APIs, front-end interfaces, and full-stack applications."
+        />
+    </Fragment>
 
-	<HeroSection client:load />
+    <HeroSection client:load />
 
-	<div class="divider"></div>
-	<ArticlesSection client:load />
+    <div class="divider"></div>
+    <ArticlesSection client:load />
 
-	<div class="divider"></div>
-	<AboutSection />
+    <div class="divider"></div>
+    <AboutSection />
 
-	<ContactSection />
+    <ContactSection />
 </Layout>
