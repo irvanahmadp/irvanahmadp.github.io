@@ -1,6 +1,6 @@
 ---
 import "../assets/app.css";
-import { Navbar } from "../components/navbar";
+import { Header } from "../components/header";
 import { Footer } from "../components/footer";
 ---
 
@@ -13,7 +13,7 @@ import { Footer } from "../components/footer";
         <slot name="meta" />
     </head>
     <body class="antialiased">
-        <Navbar />
+        <Header />
 
         <div class="min-h-[calc(100vh-100px)] max-w-7xl mx-auto px-4">
             <slot />

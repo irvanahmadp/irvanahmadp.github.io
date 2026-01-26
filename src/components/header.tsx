@@ -1,6 +1,6 @@
 import { GithubIcon } from "lucide-react";
 
-export function Navbar() {
+export function Header() {
   return (
     <div className="z-20 bg-base-200 md:bg-base-200/70 fixed shadow-sm w-full backdrop-blur-xl">
       <div className="navbar max-w-7xl m-auto">
