@@ -2,8 +2,6 @@ import {
   BookIcon,
   GithubIcon,
   LinkedinIcon,
-  LucideLinkedin,
-  SunMediumIcon,
 } from "lucide-react";
 
 export function ContactSection() {
