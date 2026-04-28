@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CodeIcon, MonitorIcon } from "lucide-react";
+import { CodeIcon, MonitorIcon, RocketIcon, SparklesIcon } from "lucide-react";
 import { AnimatePresence, motion, stagger } from "motion/react";
 import { cn } from "../../lib/utils";
 import projects from "../../data/projects.json";
@@ -94,7 +94,7 @@ export function ProjectsSection() {
                 exit={{ opacity: 0 }}
               >
                 <div className="rounded aspect-[3/1.5] overflow-hidden bg-primary/25 flex justify-center items-center">
-                  <span className="font-semibold text-2xl tracking-tight">
+                  <span className="font-semibold text-2xl tracking-tight text-center">
                     {project.title}
                   </span>
                 </div>
@@ -122,12 +122,30 @@ export function ProjectsSection() {
                       </a>
                     )}
 
+                    {project.download && (
+                      <a
+                        href={project.download}
+                        className="btn btn-xs btn-primary"
+                      >
+                        <RocketIcon className="size-4" /> Download
+                      </a>
+                    )}
+
                     {project.demo && (
                       <a
                         href={project.demo}
                         className="btn btn-xs btn-secondary"
                       >
                         <MonitorIcon className="size-4" /> Demo
+                      </a>
+                    )}
+
+                    {project.features && (
+                      <a
+                        href={project.features}
+                        className="btn btn-xs btn-secondary"
+                      >
+                        <SparklesIcon className="size-4" /> Explore Features
                       </a>
                     )}
                   </div>

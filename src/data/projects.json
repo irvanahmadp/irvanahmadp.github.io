@@ -1,5 +1,15 @@
 [
   {
+    "title": "Woollet - Budgeting and money manager (expense tracker)",
+    "category": "Mobile",
+    "download": "https://play.google.com/store/apps/details?id=com.raintechid.moneyfy",
+    "features": "https://raintechapps.com/products/Woollet-Budget-and-Money-Track/",
+    "description": "Manage your finances easily, securely, and privately. Stay on track with your spending using a local-first system where only you own your data.",
+    "code": "",
+    "slug": "/projects/woollet",
+    "tags": ["React Native", "Expo", "Nativewind"]
+  },
+  {
     "title": "Raintechapps",
     "category": "Website",
     "demo": "https://raintechapps.com",
