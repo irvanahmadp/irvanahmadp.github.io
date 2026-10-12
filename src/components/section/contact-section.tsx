@@ -1,8 +1,4 @@
-import {
-  BookIcon,
-  GithubIcon,
-  LinkedinIcon,
-} from "lucide-react";
+import { BookIcon, BookTextIcon, GithubIcon, LinkedinIcon } from "lucide-react";
 
 export function ContactSection() {
   return (
@@ -34,6 +30,13 @@ export function ContactSection() {
           className="btn btn-outline btn-sm"
         >
           <BookIcon className="size-4" /> Medium
+        </a>
+        <a
+          href="https://kindi.id/author/irvanahmad"
+          target="_blank"
+          className="btn btn-outline btn-sm"
+        >
+          <BookTextIcon className="size-4" /> Kindi
         </a>
       </div>
     </section>
