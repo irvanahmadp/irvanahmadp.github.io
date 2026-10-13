@@ -32,7 +32,7 @@ export function ContactSection() {
           <BookIcon className="size-4" /> Medium
         </a>
         <a
-          href="https://kindi.id/author/irvanahmad"
+          href="https://kindi.id/authors/irvanahmad"
           target="_blank"
           className="btn btn-outline btn-sm"
         >
